@@ -17,7 +17,7 @@ export default function FormPage() {
             phone: event.target.mobileNumber.value,
             category: event.target.category.value,
         }
-        axios.post('https://my-backend.onrender.com/user/create', formData).then(
+        axios.post('http://localhost:3000/user/create', formData).then(
             (success) => {
                 tostifyMsg(success.data.msg, success.data.status)
                 if (success.data.status == 1) {
