@@ -7,7 +7,7 @@ const userRouter = require('./router/userRouter');
 server.use(express.json())
 server.use(cors(
     {
-        origin: ['http://localhost:5173', 'https://user-registration-hm2t.vercel.app']
+        origin: ['http://localhost:5173', 'https://user-registration-hm2t.vercel.app/']
     }
 ))
 
